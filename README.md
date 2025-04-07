@@ -3,8 +3,8 @@ This is a simple terrain built using JS and GLSL code.
 
 ## Controls
 
-O: Observer View
-R: Player View
+'O' : Observer View<br>
+'R' : Player View
 
 Observer View:
 - Left Click + Drag: Pan
