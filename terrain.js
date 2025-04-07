@@ -178,7 +178,6 @@ class Terrain {
         const centerX = this.WIDTH * this.cellSize / 2;
         const centerY = this.HEIGHT * this.cellSize / 2;
         const centerZ = this.terrainFunction(centerX / this.cellSize, centerY / this.cellSize);
-        //console.log(`Terrain Center: [${centerX.toFixed(2)}, ${centerY.toFixed(2)}, ${centerZ.toFixed(2)}]`);
 
         gl.bindBuffer(gl.ARRAY_BUFFER, this.waterBuffer);
         gl.vertexAttribPointer(posLoc, 3, gl.FLOAT, false, 0, 0);
