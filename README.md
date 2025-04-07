@@ -1,2 +1,2 @@
 ## Live Demo
-🚀 [View the live deme](https://bwirick-ut.github.io/webGL-terrain/)
+🚀 [View the live demo](https://bwirick-ut.github.io/webGL-terrain/)
