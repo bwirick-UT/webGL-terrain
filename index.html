@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Terrain Builder</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+        }
+        #glcanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            pointer-events: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <canvas id="glcanvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <b>Controls:</b><br>
+        <b>O:</b> Observer View<br>
+        <b>R:</b> Player View<br>
+        <br>
+        <b>Observer View:</b><br>
+        - Left Click + Drag: Pan<br>
+        - Right Click + Drag: Orbit<br>
+        - Scroll Wheel: Zoom<br>
+        <br>
+        <b>Player View:</b><br>
+        - W/S: Move Forward/Backward<br>
+        - A/D: Turn Left/Right<br>
+        - Right Click + Drag: Free Look (Locks Cursor)
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js" integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ==" crossorigin="anonymous" defer></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
