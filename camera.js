@@ -128,7 +128,7 @@ export class Camera {
 
         const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
         const fovy = Math.PI / 2;
-        const near = Math.min(this.minZoomDistance * 0.5, 1.0);
+        const near = 0.1;
         const far = this.maxZoomDistance * 1.5;
 
         mat4.perspective(perspectiveMatrix, fovy, aspect, near, far);
